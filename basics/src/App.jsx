@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import FunctionalComponent from'./components/1FuctionalComponent'
+import ClassComponent from './components/2ClassComponent'
+import Props from './components/3Props'
+import State from './components/4State'
+import EventHandling from './components/5EventHandling'
+import ConditionalRendering from './components/6ConditionalRendering'
+import ListRendering from './components/7ListRendering'
+import FormHandling from './components/8FormHandling'
+import Refs from './components/9Refs'
+import HTTPGetRequest from './components/10HTTPGetRequest'
+import HTTPPostRequest from './components/11HTTPPostRequest'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      {/* <FunctionalComponent/> */}
+      {/* <ClassComponent />  */}
+    {/* <Props name = "Ram" heroname = "Batman">
+      <p>This is a children props</p>
+    </Props>
+    <Props name = "Shyam" heroname = "Ironman"/> */}
+    {/* <State /> */}
+    {/* <EventHandling /> */}
+    {/* <ConditionalRendering /> */}
+    {/* <ListRendering /> */}
+    {/* <FormHandling /> */}
+    {/* <Refs/> */}
+    {/* <HTTPGetRequest /> */}
+    <HTTPPostRequest />
+    </div>
   )
 }
-
-export default App
